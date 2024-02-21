@@ -30,7 +30,7 @@
 Aplicação de CLI em Rust para a geração de uma frase seed aleatória para carteiras bitcoin 
 
 > [!CAUTION]
-> Apenas para uso educacional! Os números randômicos neste projeto não são gerados de forma completamente segura, por isso não deve ser utilizada para carteiras reais de bitcoin
+> Apenas para uso educacional! Os números randômicos neste projeto **NÃO** são gerados com segurança adequada, por isso não deve ser utilizada para carteiras reais de bitcoin
 
 ## Requisitos
 - Ambiente de programação Rust instalado na máquina
