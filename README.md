@@ -108,7 +108,8 @@ cargo run
 ## Guia
 ```
 1. Após executar a aplicação, aguarde sua inicialização
-2. Digite [1] para a geração de frase seed de 24 palavras ou [2] para 12 palavras. Pressione a tecla [ENTER]
+2. Digite [1] para a geração de frase seed de 24 palavras
+       ou [2] para 12 palavras. Pressione a tecla [ENTER]
 3. Mova o mouse para gerar aleatoriedade na criação da frase seed
 4. Processo concluído, sua frase seed será impressa no terminal
 
