@@ -7,7 +7,11 @@ use enigo::*;
 
 fn read_csv() -> Result<(), Box<dyn Error>> {
     let mut path: String = String::from(env::current_dir()?.to_string_lossy());
-    path = path.replace("/src","/Assets/words.csv");
+    if cfg!(windows) {
+		path = path.replace("\\src","\\Assets\\words.csv");
+	} else {
+		path = path.replace("/src","/Assets/words.csv");
+	}
     let mut rdr = Reader::from_path(path)?;
     let mut temp: String;
     let mut v: Vec<String> = Vec::new();
