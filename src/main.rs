@@ -42,13 +42,12 @@ fn read_string() -> String {
 fn seed(v: &[String]) {
     let enigo = Enigo::new();
     let mut x: i32 = 0;
-    let mut words: i32;
+    let mut words: i32 = 0;
     let mut result: i64;
     let mut rng;
     let mut last_cursor_location: (i32,i32);
     let mut cursor_location: (i32,i32);
     
-    words = 0;
     println!();
     while words == 0 {
         println!("Digite [1] para gerar uma seed frase de 24 palavras");
