@@ -89,7 +89,7 @@ fn seed(v: &[String]) {
         
         if x%11==0{
             rng = ChaCha8Rng::seed_from_u64(result as u64);
-            print!("{} ", v[rng.gen_range(0..2047)]);
+            print!("{} ", v[rng.gen_range(0..=2047)]);
         }
         
         loop {
