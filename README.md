@@ -33,7 +33,7 @@ Aplicação de CLI em Rust para a geração de uma frase seed aleatória para ca
 > Apenas para uso educacional! Os números randômicos neste projeto **NÃO** são gerados com segurança adequada, por isso não deve ser utilizada para carteiras reais de bitcoin
 
 ## Requisitos
-- MacOS (Intel)
+- Windows e MacOS (Testado em MacOS com cpu Intel)
 - Ambiente de programação Rust instalado na máquina
 
 ## Instalação
