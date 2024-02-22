@@ -29,11 +29,17 @@
 ## Aplicação
 Aplicação de CLI em Rust para a geração de uma frase seed aleatória para carteiras bitcoin 
 
+As palavras utilizadas para a criação das frases seed nessa aplicação seguem o padrão da Proposta de Melhoria do Bitcoin (BIP 39)
+
 > [!CAUTION]
-> Apenas para uso educacional! Os números randômicos neste projeto **NÃO** são gerados com segurança adequada, por isso não deve ser utilizada para carteiras reais de bitcoin
+> ```
+> **Apenas para uso educacional e desenvolvimento!**
+> Os números randômicos neste projeto NÃO são gerados com segurança adequada.
+> NÃO utilize a frase seed criada nessa aplicação em carteiras reais de bitcoin
+> ```
 
 ## Requisitos
-- Windows ou MacOS (Testado em MacOS com cpu Intel)
+- Windows, MacOS (Testado em MacOS Intel), ou sistemas Linux para desktop (Testado em Raspberry pi 4 (Debian aarch64))
 - Ambiente de programação Rust instalado na máquina
 
 ## Instalação
@@ -44,12 +50,30 @@ git clone https://github.com/GabrielPCO/btc-seed-generator.git
 
 ```
 
+- 1.1 **(*Apenas para sistemas Linux*)**: Instale o pacote libxdo-dev
+
+> Linux
+>```
+>
+>apt install libxdo-dev
+>
+>```
+
 - 2: Acesse a pasta clonada
-```
 
-cd btc-seed-generator
+> Windows
+>```
+>
+>dir btc-seed-generator
+>
+>```
 
-```
+> MacOs/Linux
+>```
+>
+>cd btc-seed-generator
+>
+>```
 
 - 3: Realiza a build da aplicação
 ```
@@ -59,11 +83,20 @@ cargo build
 ```
 
 - 4: Acesse a pasta /src
-```
 
-cd src
+> Windows
+>```
+>
+>dir src
+>
+>```
 
-```
+> MacOs/Linux
+>```
+>
+>cd src
+>
+>```
 
 - 5: Execute a aplicação
 ```
